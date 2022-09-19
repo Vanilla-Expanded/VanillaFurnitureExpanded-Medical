@@ -21,7 +21,6 @@
       <ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
       <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
       <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
-      <Cleanliness>-20</Cleanliness>
       <Beauty>-10</Beauty>
     </statBases>
     <comps>
