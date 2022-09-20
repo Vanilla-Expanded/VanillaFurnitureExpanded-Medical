@@ -20,7 +20,7 @@
       <Comfort>0.60</Comfort>
       <ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
       <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
-      <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
+      <SurgerySuccessChanceFactor>1.25</SurgerySuccessChanceFactor>
       <Beauty>-10</Beauty>
     </statBases>
     <comps>
