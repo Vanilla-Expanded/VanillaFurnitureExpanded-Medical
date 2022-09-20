@@ -47,6 +47,7 @@
       <bed_showSleeperBody>true</bed_showSleeperBody>
       <bed_healPerDay>5</bed_healPerDay>
       <bed_defaultMedical>true</bed_defaultMedical>
+      <paintable>true</paintable>
     </building>
     <fillPercent>0.4</fillPercent>
     <pathCost>60</pathCost>

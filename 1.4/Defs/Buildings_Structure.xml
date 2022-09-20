@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <ThingDef Name="SterileWallBase" ParentName="BuildingBase" Abstract="True">
@@ -64,8 +64,8 @@
       <blueprintGraphicData>
         <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
       </blueprintGraphicData>
+      <paintable>true</paintable>
     </building>
-
     <designatorDropdown>Wall_SterileMF</designatorDropdown>
   </ThingDef>
 
