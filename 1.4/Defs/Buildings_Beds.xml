@@ -65,7 +65,7 @@
     <defName>Bed_CryptoBed</defName>
     <label>cryptosleep suspender</label>
     <description>A medical that uses partial cryptosleep to slow down the degredation of wounds and help the body heal, although with the same side effects of cryptosleep, albeit at a lesser severity.</description>
-    <thingClass>AOMoreMedical.Building_CryptoBed</thingClass>
+    <thingClass>VanillaFurnitureEM.Building_CryptoBed</thingClass>
     <graphicData>
       <texPath>Things/Beds/CryptosleepSuspender/CryptosleepSuspender</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
