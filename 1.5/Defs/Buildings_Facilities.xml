@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>Facility_VitalsCentre</defName>
     <label>vitals centre</label>
     <description>A large centre for monitoring the vitals of several patients at once, increasing medical tend quality, surgery success chance and immunity gain speed when placed in the vicinity of a hospital bed or surgical table. Only works for hospital beds or surgical tables - normal beds will not benefit.</description>
-    <graphicData>	
+    <graphicData>
       <texPath>Things/Facilities/VitalsControls/VitalsControls</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-	  <drawSize>(6,4)</drawSize>
+      <drawSize>(6,4)</drawSize>
       <shadowData>
         <volume>(0.55, 0.30, 0.40)</volume>
       </shadowData>
@@ -21,7 +21,9 @@
       </damageData>
     </graphicData>
     <defaultPlacingRot>South</defaultPlacingRot>
-    <researchPrerequisites><li>VitalsMonitor</li></researchPrerequisites>
+    <researchPrerequisites>
+      <li>VitalsMonitor</li>
+    </researchPrerequisites>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.6</fillPercent>
@@ -34,7 +36,7 @@
     <size>(3,2)</size>
     <costList>
       <Steel>90</Steel>
-	  <Plasteel>30</Plasteel>
+      <Plasteel>30</Plasteel>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <designationCategory>Misc</designationCategory>
@@ -48,20 +50,20 @@
         <shortCircuitInRain>true</shortCircuitInRain>
         <basePowerConsumption>150</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Facility">
         <statOffsets>
           <MedicalTendQualityOffset>0.04</MedicalTendQualityOffset>
           <ImmunityGainSpeedFactor>0.01</ImmunityGainSpeedFactor>
-		  <SurgerySuccessChanceFactor>0.03</SurgerySuccessChanceFactor>
+          <SurgerySuccessChanceFactor>0.03</SurgerySuccessChanceFactor>
         </statOffsets>
         <maxSimultaneous>1</maxSimultaneous>
         <maxDistance>8</maxDistance>
       </li>
     </comps>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <uiIconScale>1</uiIconScale>
   </ThingDef>
@@ -73,7 +75,7 @@
     <graphicData>
       <texPath>Things/Facilities/MedicalDripStand</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2.1,2.3)</drawSize>
+      <drawSize>(2.1,2.3)</drawSize>
       <shadowData>
         <volume>(0.55, 0.30, 0.40)</volume>
       </shadowData>
@@ -85,7 +87,9 @@
         <cornerTR>Damage/Corner</cornerTR>
       </damageData>
     </graphicData>
-    <researchPrerequisites><li>HospitalBed</li></researchPrerequisites>
+    <researchPrerequisites>
+      <li>HospitalBed</li>
+    </researchPrerequisites>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.2</fillPercent>
@@ -95,11 +99,11 @@
       <Mass>5</Mass>
       <Flammability>0.7</Flammability>
     </statBases>
-	<rotatable>false</rotatable>
+    <rotatable>false</rotatable>
     <size>(1,1)</size>
     <costList>
       <Steel>50</Steel>
-	  <MedicineIndustrial>4</MedicineIndustrial>
+      <MedicineIndustrial>4</MedicineIndustrial>
     </costList>
     <designationCategory>Misc</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
@@ -115,23 +119,23 @@
         <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
       </li>
     </comps>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>
-	<uiIconOffset>(0, 0.1)</uiIconOffset>
+    <uiIconOffset>(0, 0.1)</uiIconOffset>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>Facility_ResearchCounter</defName>
     <label>research counter</label>
-	<description>A waist high sterilised surface for performing sensitive research on. Gives a small boost to nearby research benches as well as helping to keep the area clean. Stacks up to 20 times.</description>
+    <description>A waist high sterilised surface for performing sensitive research on. Gives a small boost to nearby research benches as well as helping to keep the area clean. Stacks up to 20 times.</description>
     <graphicData>
       <texPath>Things/Linked/ResearchCounter/ResearchCounter_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>Basic</linkType>
-	  <shaderType>CutoutComplex</shaderType>
+      <shaderType>CutoutComplex</shaderType>
       <linkFlags>
         <li>Custom6</li>
       </linkFlags>
@@ -146,7 +150,7 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-	<uiIconPath>Things/Linked/ResearchCounter/ResearchCounter_MenuIcon</uiIconPath>
+    <uiIconPath>Things/Linked/ResearchCounter/ResearchCounter_MenuIcon</uiIconPath>
     <building>
       <blueprintGraphicData>
         <texPath>Things/Linked/ResearchCounter/ResearchCounter_Blueprint_Atlas</texPath>
@@ -158,28 +162,31 @@
       <Mass>3</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>0.5</Beauty>
-	  <Cleanliness>0.3</Cleanliness>
+      <Cleanliness>0.3</Cleanliness>
     </statBases>
-	<placingDraggableDimensions>1</placingDraggableDimensions>
-	<rotatable>false</rotatable>
-	<researchPrerequisites><li>SterileMaterials</li></researchPrerequisites>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <rotatable>false</rotatable>
+    <researchPrerequisites>
+      <li>SterileMaterials</li>
+    </researchPrerequisites>
     <size>(1,1)</size>
     <costStuffCount>15</costStuffCount>
     <costList>
       <Silver>20</Silver>
+      <Gold>10</Gold>
     </costList>
-	<designationCategory>Misc</designationCategory>
+    <designationCategory>Misc</designationCategory>
     <comps>
       <li Class="CompProperties_Facility">
         <statOffsets>
           <ResearchSpeedFactor>0.01</ResearchSpeedFactor>
         </statOffsets>
         <maxSimultaneous>20</maxSimultaneous>
-		<maxDistance>6</maxDistance>
+        <maxDistance>6</maxDistance>
       </li>
     </comps>
-		<placeWorkers>
-			<li>PlaceWorker_ShowFacilitiesConnections</li>
-		</placeWorkers>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
   </ThingDef>
 </Defs>
