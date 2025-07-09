@@ -5,7 +5,7 @@ namespace VanillaFurnitureEM
 {
     public class Building_CryptoBed : Building_Bed
     {
-        public override void Tick()
+        protected override void Tick()
         {
             if (GetCurOccupant(0) is Pawn occupant && occupant != null)
             {

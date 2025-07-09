@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Bed_OperatingTable</defName>
     <label>operating table</label>
@@ -21,8 +20,7 @@
       <Comfort>0.60</Comfort>
       <ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
       <MedicalTendQualityOffset>0.05</MedicalTendQualityOffset>
-      <SurgerySuccessChanceFactor>1.05</SurgerySuccessChanceFactor>
-      <Cleanliness>-20</Cleanliness>
+      <SurgerySuccessChanceFactor>1.25</SurgerySuccessChanceFactor>
       <Beauty>-10</Beauty>
     </statBases>
     <comps>
@@ -49,6 +47,7 @@
       <bed_showSleeperBody>true</bed_showSleeperBody>
       <bed_healPerDay>5</bed_healPerDay>
       <bed_defaultMedical>true</bed_defaultMedical>
+      <paintable>true</paintable>
     </building>
     <fillPercent>0.4</fillPercent>
     <pathCost>60</pathCost>
@@ -66,7 +65,7 @@
     <defName>Bed_CryptoBed</defName>
     <label>cryptosleep suspender</label>
     <description>A medical that uses partial cryptosleep to slow down the degredation of wounds and help the body heal, although with the same side effects of cryptosleep, albeit at a lesser severity.</description>
-    <thingClass>AOMoreMedical.Building_CryptoBed</thingClass>
+    <thingClass>VanillaFurnitureEM.Building_CryptoBed</thingClass>
     <graphicData>
       <texPath>Things/Beds/CryptosleepSuspender/CryptosleepSuspender</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
