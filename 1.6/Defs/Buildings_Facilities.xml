@@ -90,7 +90,7 @@
     <researchPrerequisites>
       <li>HospitalBed</li>
     </researchPrerequisites>
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.2</fillPercent>
     <statBases>
